@@ -1,13 +1,22 @@
 function calculate(numberOne, operation, numberTwo) {
+  if(numberOne ===  undefined){
+    NumberOne = 0
+  }
+  if(numberTwo === undefined){
+      numberTwo = 0
+  }
   switch (operation) {
     case '+':
-      return numberOne - numberTwo
+      return parseInt(numberOne)+ numberTwo
     case '-':
-      return numberOne + parseInt(numberTwo)
+      return numberOne - parseInt(numberTwo)
+      case '*': 
+        return numberOne * numberTwo
+        
     default:
       return 'Operation not yet supported. You sent ' + operation
   }
-}
+} 
 
 /**
  Export an object with two properties.
