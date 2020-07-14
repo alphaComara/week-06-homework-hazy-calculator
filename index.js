@@ -12,7 +12,7 @@ function calculate(numberOne, operation, numberTwo) {
       return numberOne - parseInt(numberTwo)
       case '*': 
         return numberOne * numberTwo
-        
+      
     default:
       return 'Operation not yet supported. You sent ' + operation
   }
